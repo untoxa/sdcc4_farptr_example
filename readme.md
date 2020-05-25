@@ -9,7 +9,8 @@ and call __banked functions indirect with the help of some macros.
 
 Far pointer type and helper macros are defined in far_ptr.h.
 
-	FAR_PTR is a far_pointer type. low word contains a regular "near pointer", and high word - the "segment" (or bank number).
+	FAR_PTR is a far_pointer type. low word contains a regular "near pointer", and high 
+		word - the "segment" (or bank number).
 
 	TO_FAR_PTR(ofs, seg) macro that constructs a far pointer at compile time
 
@@ -17,7 +18,9 @@ Far pointer type and helper macros are defined in far_ptr.h.
 	FAR_OFS(ptr) gets an offset from a far pointer
 	FAR_FUNC(ptr, type) gets an offset from a far pointer and casts it to the given type
 
-	FAR_CALL(ptr, typ, ...) calls the function of a given type indirect by the given far pointer and with provided parameters. banks are switched and restored transparently.
+	FAR_CALL(ptr, typ, ...) calls the function of a given type indirect by the given far 
+		pointer and with provided parameters. banks are switched and restored 
+		transparently.
 
 	to_far_ptr(ofs, seg) function that constructs a far pointer at runtime
 
