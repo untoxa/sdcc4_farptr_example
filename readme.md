@@ -4,8 +4,8 @@ SDCC4 for gbz80 "far pointers" example
 GBDK-2020 v3.1.1 now supports transparent bank switching when calling __banked functions directly.
 
 Unfortunately it is impossible to call those functions by pointer, because pointers do not
-contain information about the banks. I made a library, that allows to contruct "far pointers" 
-and call __banked functions indirect with the help of some macros.
+contain information about the banks. I made a library, that allows to construct "far pointers" 
+and call __banked functions indirectly with the help of some macros.
 
 Far pointer type and helper macros are defined in far_ptr.h.
 
