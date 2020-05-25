@@ -9,7 +9,7 @@ and call __banked functions indirect with the help of some macros.
 
 Far pointer type and helper macros are defined in far_ptr.h.
 
-	FAR_PTR is a far_pointer type. low word contains a regular "near pointer", and high 
+	FAR_PTR is a "far pointer" type. low word contains a regular "near pointer", and high 
 		word - the "segment" (or bank number).
 
 	TO_FAR_PTR(ofs, seg) macro that constructs a far pointer at compile time
