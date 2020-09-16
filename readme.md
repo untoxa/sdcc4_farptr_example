@@ -1,6 +1,13 @@
 SDCC4 for gbz80 "far pointers" example
 --------------------------------------
 
+Features were implemented in the latest GBDK-2020 releases. You don't need this now, just use latest GBDK: header files, library support and example are included into the GBDK-2020 release.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Link to GBDK-2020: https://github.com/Zal0/gbdk-2020
+
+The description below explains the how to use the feature.
+
 GBDK-2020 v3.1.1 now supports transparent bank switching when calling __banked functions directly.
 
 Unfortunately it is impossible to call those functions by pointer, because pointers do not
